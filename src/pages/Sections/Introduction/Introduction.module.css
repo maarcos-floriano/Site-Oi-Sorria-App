@@ -1,0 +1,16 @@
+.introduction {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../../../utils/assets/background.png');
+    background-position: start;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    & .intro__image {
+        width: 20%
+    }
+}
