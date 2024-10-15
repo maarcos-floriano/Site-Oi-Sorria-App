@@ -1,11 +1,11 @@
 import React from 'react';
 import styles from "./Introduction.module.css";
 import logo from "../../../utils/assets/logo.png";
-import Container from "@mui/material/Container";
 
 const Introduction = () => {
   return (
     <section className={styles.heroContainer}>
+      <img src={logo} alt="Logo" className={styles.logo} />
       <div className={styles.content}>
         <h1 className={styles.title}>Oi, Sorria</h1>
         <p className={styles.description}>
