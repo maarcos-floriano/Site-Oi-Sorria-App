@@ -6,13 +6,13 @@
 
 .sectionTitle {
   color: #5a8bff;
-  font-size: 36px;
-  margin-bottom: 80px; /* Increased spacing */
+  font-size: 4em;
+  margin-bottom: 80px;
 }
 
 .carouselContainer {
   position: relative;
-  max-width: 1200px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 0 60px;
 }
@@ -23,7 +23,13 @@
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease; /* Smooth transition */
+  width: 100%;
+}
+
+.teamMemberWrapper {
+  flex: 0 0 calc(100% / 3);
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 .carouselButton {
@@ -32,7 +38,7 @@
   transform: translateY(-50%);
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 3em;
   color: #5a8bff;
   cursor: pointer;
   z-index: 10;
@@ -47,12 +53,16 @@
 }
 
 @media (max-width: 768px) {
-  .carousel {
-    flex-direction: column;
-    align-items: center;
+  .sectionTitle {
+    margin-bottom: 0px;
   }
 
-  .carouselContainer {
-    padding: 0 20px;
+  .teamMemberWrapper {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+
+  .carousel {
+    width: 100%;
   }
 }
