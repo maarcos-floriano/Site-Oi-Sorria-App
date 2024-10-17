@@ -1,6 +1,8 @@
 import Navbar from '../../components/Navbar/Navbar';
 import Introduction from '../Sections/Introduction/Introduction';
 import ProcedureList from '../Sections/ProcedureList/ProcedureList';
+import DentalProcedures from '../Sections/DentalProcedures/DentalProcedures';
+import TeamSection from '../Sections/TeamSection/TeamSection';
 import style from './Home.module.css';
 
 const Home = () => {
@@ -9,6 +11,8 @@ const Home = () => {
       <Navbar/>
       <Introduction/>
       <ProcedureList />
+      <DentalProcedures />
+      <TeamSection />
     </div>
   );
 };

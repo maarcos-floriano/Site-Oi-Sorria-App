@@ -1,0 +1,58 @@
+.teamSection {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: #5a8bff;
+  font-size: 36px;
+  margin-bottom: 80px; /* Increased spacing */
+}
+
+.carouselContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.carouselWrapper {
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.carouselButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #5a8bff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prevButton {
+  left: 10px;
+}
+
+.nextButton {
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carouselContainer {
+    padding: 0 20px;
+  }
+}

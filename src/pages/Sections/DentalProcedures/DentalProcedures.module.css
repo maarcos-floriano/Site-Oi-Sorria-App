@@ -1,0 +1,100 @@
+.dental-procedures {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: white;
+  }
+  
+  .image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 650px; /* Limite de largura para a imagem */
+    margin-right: 100px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .text-container {
+    flex: 1;
+    padding: 20px;
+    max-width: 700px; /* Limite de largura para o texto */
+    text-align: left;
+  }
+  
+  .text-container h2 {
+    font-size: 2rem;
+    color: #4a90e2;
+    font-weight: bold;
+  }
+  
+  .text-container p {
+    font-size: 1.5rem;
+    color: #4a90e2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .learn-more-button {
+    background-color: #0453BB;
+    color: white;
+    padding: 15px 80px;
+    border-radius: 10px;
+    border-color: #4a90e2;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    letter-spacing:5px;
+  }
+  
+  .learn-more-button:hover {
+    background-color: transparent;
+    color: #0453BB;
+    border-color: #0453BB;
+  }
+  
+  /* Estilos para telas menores */
+  @media (max-width: 768px) {
+    .dental-procedures {
+      flex-direction: column;
+      padding: 30px;
+    }
+  
+    .image-container {
+      margin: 0 auto 20px; /* Centraliza e ajusta o espaço */
+    }
+  
+    .text-container h2 {
+      font-size: 1.8rem;
+    }
+  
+    .text-container p {
+      font-size: 1.1rem;
+    }
+  
+    .learn-more-button {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-container h2 {
+      font-size: 1.6rem;
+    }
+  
+    .text-container p {
+      font-size: 1rem;
+    }
+  
+    .learn-more-button {
+      font-size: 0.8rem;
+      padding: 8px 16px;
+    }
+  }
+  
