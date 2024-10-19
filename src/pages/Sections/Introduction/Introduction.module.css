@@ -1,16 +1,76 @@
-.introduction {
-    width: 100%;
-    min-height: 100vh;
-    background-image: url('../../../utils/assets/background.png');
-    background-position: start;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-color: white;
+.heroContainer {
+    background-color: #ffffff;
+    color: #ffffff;
     display: flex;
-    align-items: start;
     justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: left;
+    background-image: url('../../../utils/assets/background.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    gap: 10%;
+  }
 
-    & .intro__image {
-        width: 20%
+  .logo {
+    position: relative;
+  }
+  
+  .content {
+    max-width: 800px;
+  }
+  
+  .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .button {
+    background-color: #ffffff;
+    color: #0453BB;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-color: #ffffff;
+  }
+  
+  .button:hover {
+    background-color: transparent;
+    color: #ffffff;
+  }
+  
+  @media (max-width: 768px) {
+    .heroContainer {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      min-height: 75vh;
     }
-}
+  
+    .logo {
+      width: 150px;
+    }
+    
+    .title {
+      font-size: 2em;
+    }
+  
+    .description {
+      font-size: 1em;
+    }
+  
+    .button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+    }
+  }
+  
