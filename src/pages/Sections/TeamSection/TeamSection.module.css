@@ -54,6 +54,7 @@
 
 @media (max-width: 768px) {
   .sectionTitle {
+    font-size: 3em;
     margin-bottom: 0px;
   }
 
