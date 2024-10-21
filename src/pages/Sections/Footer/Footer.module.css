@@ -1,0 +1,171 @@
+/* Estilos gerais do footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 3rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.section a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.section p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Estilos dos ícones de redes sociais */
+.socialIcons a {
+    margin-right: 0.5rem;
+}
+
+.socialIcon {
+    font-size: 1.5rem;
+    color: #0072b1;
+}
+
+.socialIcon:hover {
+    color: #005f90;
+}
+
+/* Links de navegação */
+.navList {
+    list-style: none;
+    padding: 0;
+}
+
+.navList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.navList a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.navList a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    color: #0072b1;
+    font-size: 1rem;
+}
+
+/* Estilos da seção de contato */
+.contactIcon {
+    color: #0072b1;
+    margin-right: 0.5rem;
+}
+
+.subscribe {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-direction: column;
+}
+
+.subscribe input {
+    flex: 1;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+.subscribe button {
+    width: 50%;
+    background-color: #0072b1;
+    color: #fff;
+    border: 2px solid #4a90e2;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    letter-spacing: 2px;
+}
+
+.subscribe button:hover {
+    background-color: transparent;
+    color: #4a90e2;
+    border-color: #4a90e2;
+}
+
+/* Barra inferior */
+.bottomBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #333;
+    font-size: 0.8rem;
+}
+
+.bottomBar img {
+    width: 65px;
+    height: auto;
+}
+
+.legalLinks a {
+    color: #fff;
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.legalLinks a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 2rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .bottomBar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .legalLinks {
+        margin-top: 1rem;
+    }
+
+    .legalLinks a {
+        margin-left: 0.5rem;
+    }
+
+    .bottomBar img {
+        margin-bottom: 20px;
+    }
+}
