@@ -5,8 +5,8 @@ import chat from '../../../utils/assets/chat.png';
 const AgendarConsulta = () => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>Agende sua consulta</h2>
-      
+      <h2 className={styles.title}>AGENDE SUA CONSULTA</h2>
+
       <div className={styles.formContainer}>
         <form className={styles.form}>
           <label>
@@ -29,24 +29,35 @@ const AgendarConsulta = () => {
         </form>
 
         <div className={styles.contactSection}>
-          <h3 className={styles.contactTitle}>Contato</h3>
-          <p>Preencha seus dados e deixe uma mensagem com suas preferências. Nossa equipe retornará em breve para confirmar sua consulta.</p>
+          <div className={styles.contactResume}>
+            <h3 className={styles.contactTitle}>CONTATO</h3>
+            <p>Preencha seus dados e deixe uma mensagem com suas preferências. Nossa equipe retornará em breve para confirmar sua consulta.</p>
+          </div>
 
           <div className={styles.contactRow}>
             <div className={styles.contactItem}>
               <img src={chat} alt="Telefone" className={styles.icon} />
-              <p><strong>Telefone:</strong> +55 11 95582-9675</p>
+              <div>
+                <h4>TELEFONE</h4>
+                <p>+55 11 95582-9675</p>
+              </div>
             </div>
 
             <div className={styles.contactItem}>
               <img src={chat} alt="E-mail" className={styles.icon} />
-              <p><strong>E-mail:</strong> oisorria@gmail.com</p>
+              <div>
+                <h4>E-MAIL</h4>
+                <p>oisorria@gmail.com</p>
+              </div>
             </div>
           </div>
 
           <div className={styles.contactItem}>
             <img src={chat} alt="Endereço" className={styles.icon} />
-            <p><strong>Endereço:</strong> R. Piedade, 441 - Jardim Santa Brigida</p>
+            <div>
+              <h4>ENDEREÇO</h4>
+              <p>R. Piedade, 441 - Jardim Santa Brigida</p>
+            </div>
           </div>
 
           <div className={styles.socialMediaSection}>
