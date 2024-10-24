@@ -11,11 +11,21 @@ const Home = () => {
   return (
     <div className={style['home']}>
       <Navbar/>
-      <Introduction/>
-      <ProcedureList />
-      <DentalProcedures />
-      <TeamSection />
-      <AgendarConsulta />
+      <section id="introduction">
+        <Introduction/>
+      </section>
+      <section id="procedure-list">
+        <ProcedureList />
+      </section>
+      <section id="dental-procedures">
+        <DentalProcedures />
+      </section>
+      <section id="team-section">
+        <TeamSection />
+      </section>
+      <section id="agendar-consulta">
+        <AgendarConsulta />
+      </section>
       <Footer />
     </div>
   );
