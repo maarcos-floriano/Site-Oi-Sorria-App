@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #fff;
+  margin-bottom: 50px;
 }
 
 .title {
@@ -37,7 +38,8 @@
   max-width: 600px;
 }
 
-.input, .textarea {
+.input,
+.textarea {
   width: 100%;
   padding: 10px;
   border: 2px solid #4a90e2;
@@ -46,7 +48,8 @@
   box-sizing: border-box;
 }
 
-.input:focus, .textarea:focus {
+.input:focus,
+.textarea:focus {
   outline: none;
   border-color: #3170ae;
 }
@@ -84,11 +87,18 @@
   text-align: left;
   max-width: 600px;
   color: #4a90e2;
+  font-weight: 500;
+}
+
+.contactResume {
+  margin-bottom: 35px;
 }
 
 .contactTitle {
   font-size: 1.5rem;
   color: #4a90e2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .contactRow {
@@ -102,9 +112,31 @@
   gap: 15px;
 }
 
+.contactItem div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contactItem h4 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #4a90e2;
+  font-weight: 500;
+}
+
+.contactItem p {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+}
+
 .icon {
-  width: 40px;
-  height: 40px;
+  font-size: 1.5rem;
+  color: #4a90e2;
+}
+
+.socialMedia a .icon {
+  font-size: 2rem;
 }
 
 .socialMediaSection {
@@ -115,6 +147,7 @@
   font-size: 1.5rem;
   color: #4a90e2;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .socialMedia {
@@ -137,7 +170,8 @@
     max-width: 100%;
   }
 
-  .input, .textarea {
+  .input,
+  .textarea {
     width: 100%;
   }
 }

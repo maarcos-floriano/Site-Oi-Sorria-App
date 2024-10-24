@@ -4,11 +4,13 @@
   padding: 150px 20px 20px;
   color: white;
   width: 100%;
-  height: 70vh;
+  height: 400px; /* Altura fixa para todos os cards */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   position: relative;
   margin-top: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .imageWrapper {
@@ -33,21 +35,38 @@
 .memberName {
   font-size: 1.75em;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .memberDescription {
-  font-size: 1.4em;
-  line-height: 1.6;
-  word-spacing: 2px;
-  padding: 0 20px;
-  overflow: hidden;
+  font-size: 1.2em;
+  line-height: 1.4;
+  word-spacing: 1px;
+  padding: 0 10px;
+  overflow-y: auto; /* Permite rolagem vertical */
+  flex-grow: 1;
+  /* Estiliza a barra de rolagem */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+}
+
+/* Estiliza a barra de rolagem para navegadores WebKit (Chrome, Safari, etc.) */
+.memberDescription::-webkit-scrollbar {
+  width: 6px;
+}
+
+.memberDescription::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.memberDescription::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
 }
 
 @media (max-width: 768px) {
   .teamMember {
-    padding: 120px 15px 20px;
-    margin-top: 80px;
+    height: 350px; /* Ajuste a altura para telas menores */
   }
 
   .imageWrapper {
@@ -61,17 +80,14 @@
   }
 
   .memberDescription {
-    font-size: 1.7em;
-    line-height: 1.5;
-    word-spacing: 1px;
-    padding: 0 10px;
+    font-size: 1.1em;
   }
 }
 
 @media (max-width: 480px) {
   .teamMember {
-    padding: 100px 10px 20px;
-    margin-top: 70px;
+    height: 300px; /* Ajuste a altura para telas muito pequenas */
+    padding: 100px 20px 20px;
   }
 
   .imageWrapper {
@@ -85,7 +101,6 @@
   }
 
   .memberDescription {
-    font-size: 1.4em;
-    line-height: 1.4;
+    font-size: 1em;
   }
 }

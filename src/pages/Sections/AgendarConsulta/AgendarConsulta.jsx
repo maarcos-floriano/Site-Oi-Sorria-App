@@ -1,12 +1,14 @@
 import React from 'react';
 import styles from './AgendarConsulta.module.css';
-import chat from '../../../utils/assets/chat.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const AgendarConsulta = () => {
   return (
     <section className={styles.container}>
-      <h2 className={styles.title}>Agende sua consulta</h2>
-      
+      <h2 className={styles.title}>AGENDE SUA CONSULTA</h2>
+
       <div className={styles.formContainer}>
         <form className={styles.form}>
           <label>
@@ -29,32 +31,43 @@ const AgendarConsulta = () => {
         </form>
 
         <div className={styles.contactSection}>
-          <h3 className={styles.contactTitle}>Contato</h3>
-          <p>Preencha seus dados e deixe uma mensagem com suas preferências. Nossa equipe retornará em breve para confirmar sua consulta.</p>
+          <div className={styles.contactResume}>
+            <h3 className={styles.contactTitle}>CONTATO</h3>
+            <p>Preencha seus dados e deixe uma mensagem com suas preferências. Nossa equipe retornará em breve para confirmar sua consulta.</p>
+          </div>
 
           <div className={styles.contactRow}>
             <div className={styles.contactItem}>
-              <img src={chat} alt="Telefone" className={styles.icon} />
-              <p><strong>Telefone:</strong> +55 11 95582-9675</p>
+              <FontAwesomeIcon icon={faPhone} className={styles.icon} />
+              <div>
+                <h4>TELEFONE</h4>
+                <p>+55 11 95582-9675</p>
+              </div>
             </div>
 
             <div className={styles.contactItem}>
-              <img src={chat} alt="E-mail" className={styles.icon} />
-              <p><strong>E-mail:</strong> oisorria@gmail.com</p>
+              <FontAwesomeIcon icon={faEnvelope} className={styles.icon} />
+              <div>
+                <h4>E-MAIL</h4>
+                <p>oisorria@gmail.com</p>
+              </div>
             </div>
           </div>
 
           <div className={styles.contactItem}>
-            <img src={chat} alt="Endereço" className={styles.icon} />
-            <p><strong>Endereço:</strong> R. Piedade, 441 - Jardim Santa Brigida</p>
+            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
+            <div>
+              <h4>ENDEREÇO</h4>
+              <p>R. Piedade, 441 - Jardim Santa Brigida</p>
+            </div>
           </div>
 
           <div className={styles.socialMediaSection}>
             <h3 className={styles.socialTitle}>Redes Sociais</h3>
             <div className={styles.socialMedia}>
-              <img src={chat} alt="Redes Sociais" className={styles.icon} />
-              <img src={chat} alt="Redes Sociais" className={styles.icon} />
-              <img src={chat} alt="Redes Sociais" className={styles.icon} />
+              <a href="#"><FontAwesomeIcon icon={faFacebook} className={styles.icon} /></a>
+              <a href="#"><FontAwesomeIcon icon={faTwitter} className={styles.icon} /></a>
+              <a href="#"><FontAwesomeIcon icon={faInstagram} className={styles.icon} /></a>
             </div>
           </div>
         </div>
