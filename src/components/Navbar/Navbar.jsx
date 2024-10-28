@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import style from './Navbar.module.css';
 import logo from '../../utils/assets/logo.png';
 
+
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -25,8 +26,8 @@ const Navbar = () => {
       </ul>
 
 
-      <button className={style.navbarButton}>
-        Entre em Contato
+      <button className={style.navbarButton} onClick={takeDashboard}>
+        Login
       </button>
 
       {/* Ícone de menu hambúrguer para dispositivos móveis */}
@@ -37,6 +38,10 @@ const Navbar = () => {
       </div>
     </nav>
   );
+
+  function takeDashboard(){
+    window.location.href = 'http://localhost:3000/';
+  }
 };
 
 export default Navbar;

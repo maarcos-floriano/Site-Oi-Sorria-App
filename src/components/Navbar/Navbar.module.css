@@ -50,9 +50,9 @@
 .navbarButton {
   background-color: #ffffff;
   color: #0453BB;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   font-weight: 600;
-  padding: 6px 12px;
+  padding: 6px 1%;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;

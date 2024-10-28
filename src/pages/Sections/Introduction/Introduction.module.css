@@ -1,78 +1,95 @@
 .heroContainer {
-    background-color: #ffffff;
+  background-color: #ffffff;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  text-align: left;
+  background-image: url('../../../utils/assets/background.png');
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  gap: 15%;
+}
+
+.logo {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.content {
+  max-width: 850px;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.description {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+a {
+  background-color: #0455BF;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* letter-spacing: 5px; */
+  text-decoration: none;
+  border: none;
+
+  .button {
     color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 80px 20px;
-    text-align: left;
-    background-image: url('../../../utils/assets/background.png');
-    background-size: 100vw;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 90vh;
-    gap: 15%;
+    background-color: transparent;
+    font-size: 1.5em;
+    border: none;
+  }
+}
+
+a:hover {
+  color: #0455BF;
+  transition: all 0.1s ease;
+  border-color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+
+  .learn-more-button {
+    color: #0455BF;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    min-height: 75vh;
   }
 
   .logo {
-    position: relative;
-    margin-bottom: 100px;
+    width: 150px;
   }
-  
-  .content {
-    max-width: 850px;
-    line-height: 1.5;
-  }
-  
+
   .title {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 30px;
+    font-size: 2em;
   }
-  
+
   .description {
-    font-size: 1.5em;
-    margin-bottom: 20px;
+    font-size: 1em;
   }
-  
+
   .button {
-    background-color: transparent;
-    color: #ffffff;
-    padding: 20px 50px;
-    border-radius: 10px;
-    font-size: 1.5em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    font-size: 0.9em;
+    padding: 8px 16px;
   }
-  
-  .button:hover {
-    background-color: #ffffff;
-    color: #0453BB;
-  }
-  
-  @media (max-width: 768px) {
-    .heroContainer {
-      flex-direction: column;
-      text-align: center;
-      gap: 20px;
-      min-height: 75vh;
-    }
-  
-    .logo {
-      width: 150px;
-    }
-    
-    .title {
-      font-size: 2em;
-    }
-  
-    .description {
-      font-size: 1em;
-    }
-  
-    .button {
-      font-size: 0.9em;
-      padding: 8px 16px;
-    }
-  }
-  
+}
