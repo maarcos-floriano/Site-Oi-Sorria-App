@@ -1,8 +1,8 @@
 .dental-procedures {
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 50px;
+    justify-content: space-evenly;
+    padding: 50px 7%;
     background-color: white;
   }
   
@@ -26,37 +26,36 @@
     padding: 20px;
     max-width: 700px;
     text-align: left;
+    line-height: 1.2;
   }
   
   .text-container h2 {
-    font-size: 2rem;
-    color: #4a90e2;
-    font-weight: bold;
+    font-size: 2.2rem;
+    color: #0455BFcc;
+    font-weight: bold;  
   }
   
   .text-container p {
     font-size: 1.5rem;
-    color: #4a90e2;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    color: #0455BFcc;
+    margin: 40px 0 30px 0;
   }
   
   .learn-more-button {
-    background-color: #0453BB;
+    background-color: #0455BF;
     color: white;
-    padding: 15px 80px;
+    padding: 20px 50px;
     border-radius: 10px;
-    border-color: #4a90e2;
+    font-size: 1.5em;
     cursor: pointer;
-    font-size: 1.1rem;
     transition: all 0.3s ease;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
   }
   
   .learn-more-button:hover {
     background-color: transparent;
-    color: #0453BB;
-    border-color: #0453BB;
+    color: #0455BF;
+    border-color: #0455BF;
   }
   
   @media (max-width: 768px) {

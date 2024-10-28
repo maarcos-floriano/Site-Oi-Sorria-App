@@ -3,8 +3,9 @@
   border-radius: 15px;
   padding: 150px 20px 20px;
   color: white;
-  width: 100%;
-  height: 400px; /* Altura fixa para todos os cards */
+  width: 90%;
+  height: 450px;
+  /* Altura fixa para todos os cards */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   position: relative;
@@ -22,7 +23,7 @@
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  border: 4px solid #5a90e5;
+  /* border: 4px solid #5a90e5; */
   background-color: white;
 }
 
@@ -33,21 +34,23 @@
 }
 
 .memberName {
-  font-size: 1.75em;
-  font-weight: bold;
+  font-size: 1.5em;
+  font-weight: 600;
   margin-bottom: 15px;
+  text-align: start;
+  padding: 0 15px;
 }
 
 .memberDescription {
-  font-size: 1.2em;
-  line-height: 1.4;
-  word-spacing: 1px;
-  padding: 0 10px;
-  overflow-y: auto; /* Permite rolagem vertical */
+  font-size: 1.3em;
+  padding: 15px;
+  overflow-y: auto;
   flex-grow: 1;
-  /* Estiliza a barra de rolagem */
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
+  line-height: 1.6;
+  letter-spacing: 1.2px;
+  text-align: start;
 }
 
 /* Estiliza a barra de rolagem para navegadores WebKit (Chrome, Safari, etc.) */
@@ -66,7 +69,8 @@
 
 @media (max-width: 768px) {
   .teamMember {
-    height: 350px; /* Ajuste a altura para telas menores */
+    height: 350px;
+    /* Ajuste a altura para telas menores */
   }
 
   .imageWrapper {
@@ -86,7 +90,8 @@
 
 @media (max-width: 480px) {
   .teamMember {
-    height: 300px; /* Ajuste a altura para telas muito pequenas */
+    height: 300px;
+    /* Ajuste a altura para telas muito pequenas */
     padding: 100px 20px 20px;
   }
 

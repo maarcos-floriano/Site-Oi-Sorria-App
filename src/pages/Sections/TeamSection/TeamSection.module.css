@@ -5,7 +5,7 @@
 }
 
 .sectionTitle {
-  color: #5a8bff;
+  color: #0455BFcc;
   font-size: 4em;
   margin-bottom: 80px;
 }
@@ -13,12 +13,13 @@
 .carouselContainer {
   position: relative;
   max-width: 70%;
-  margin: 0 auto;
+  margin: 0 10%;
   padding: 0 60px;
 }
 
 .carouselWrapper {
   overflow: hidden;
+  padding: 0 15px;
 }
 
 .carousel {
@@ -30,6 +31,8 @@
   flex: 0 0 calc(100% / 3);
   padding: 0 15px;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
 }
 
 .carouselButton {

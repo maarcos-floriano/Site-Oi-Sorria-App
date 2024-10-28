@@ -3,14 +3,14 @@ import TeamMember from '../../../components/TeamMember/TeamMember';
 import styles from './TeamSection.module.css';
 import dentista from '../../../utils/assets/dentist.png';
 
-const TeamSection = () => {
+const TeamSection = ({ id }) => {
   const teamMembers = [
-    { id: 1, image: dentista, name: 'DRA. YEDA UYEMA', description: 'Especialista em clínica geral, Dra. Yeda Uyema se destaca pelo atendimento humanizado e atenção aos detalhes.' },
-    { id: 2, image: dentista, name: 'DR. LUCAS SANTOS', description: 'Especialista em ortodontia, Dr. Lucas Santos combina tecnologia avançada com um atendimento amigável.' },
-    { id: 3, image: dentista, name: 'DRA. MARIANA FERRAZ', description: 'Dra. Mariana Ferraz é especialista em endodontia, reconhecida por sua habilidade em tratamentos de canal.' },
-    { id: 4, image: dentista, name: 'DR. RICARDO OLIVEIRA', description: 'Com especialização em odontopediatria, Dr. Ricardo Oliveira cria um ambiente divertido para crianças.' },
-    { id: 5, image: dentista, name: 'DRA. CLAUDIA TAVARES', description: 'Dra. Claudia Tavares é especialista em implantodontia, focada em recuperar sorrisos.' },
-    { id: 6, image: dentista, name: 'DR. ANDRÉ MARTINS', description: 'Especialista em periodontia, Dr. André Martins previne e trata doenças gengivais com precisão.' },
+    { id: 1, image: dentista, name: 'Dra. Yeda Uyema', description: 'Especialista em clínica geral, destaca-se pelo atendimento humanizado e atenção aos detalhes.' },
+    { id: 2, image: dentista, name: 'Dra. Suele Silva', description: 'Especialista em ortodontia, alia tecnologia avançada a um atendimento amigável.' },
+    { id: 3, image: dentista, name: 'Dra. Bruna Lima', description: 'Especialista em endodontia, é reconhecida por sua habilidade em tratamentos de canal.' },
+    { id: 4, image: dentista, name: 'Dr. Hsu Uyema', description: 'Especializado em clínica geral, cria um ambiente acolhedor e divertido para crianças.' },
+    { id: 5, image: dentista, name: 'Dra. Gabriela Rosa', description: 'Especialista em implantodontia, é focada na recuperação de sorrisos.' },
+    { id: 6, image: dentista, name: 'Dra. Thalita Victoria', description: 'Especialista em implantodontia, realiza implantes para devolver a autoestima aos pacientes.' },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,8 +49,8 @@ const TeamSection = () => {
   }, [currentIndex]);
 
   return (
-    <section className={styles.teamSection}>
-      <h2 className={styles.sectionTitle}>EQUIPE</h2>
+    <section className={styles.teamSection} id={id}>
+      <h2 className={styles.sectionTitle}>Equipe</h2>
       <div className={styles.carouselContainer}>
         <button className={`${styles.carouselButton} ${styles.prevButton}`} onClick={prevSlide}>&lt;</button>
         <div className={styles.carouselWrapper}>

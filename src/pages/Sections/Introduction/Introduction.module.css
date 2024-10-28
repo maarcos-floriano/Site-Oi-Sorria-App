@@ -4,27 +4,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: left;
     background-image: url('../../../utils/assets/background.png');
-    background-size: cover;
+    background-size: 100vw;
     background-position: center;
-    min-height: 80vh;
-    gap: 10%;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    gap: 15%;
   }
 
   .logo {
     position: relative;
+    margin-bottom: 100px;
   }
   
   .content {
-    max-width: 800px;
+    max-width: 850px;
+    line-height: 1.5;
   }
   
   .title {
     font-size: 2.5em;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .description {
@@ -33,19 +36,18 @@
   }
   
   .button {
-    background-color: #ffffff;
-    color: #0453BB;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1em;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 10px;
+    font-size: 1.5em;
     cursor: pointer;
     transition: all 0.3s ease;
-    border-color: #ffffff;
   }
   
   .button:hover {
-    background-color: transparent;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #0453BB;
   }
   
   @media (max-width: 768px) {

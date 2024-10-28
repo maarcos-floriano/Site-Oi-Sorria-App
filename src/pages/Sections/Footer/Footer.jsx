@@ -12,8 +12,8 @@ const Footer = () => {
         <div className={styles.section}>
           <h3>INFORMAÇÕES</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec
-            ullamcorper mattis, pulvinar dapibus leo.
+            Estamos aqui para proporcionar uma experiência de atendimento humanizada e
+            eficiente. Siga-nos nas redes sociais e acompanhe nossas novidades!
           </p>
           <div className={styles.socialIcons}>
             <a href="#"><FontAwesomeIcon icon={faFacebook} className={styles.socialIcon} /></a>
@@ -23,34 +23,34 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className={styles.section}>
+        <div className={styles.section} style={{ paddingLeft: '15%' }}>
           <h3>NAVEGAÇÃO</h3>
           <ul className={styles.navList}>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#introduction">Homepage</a>
+              <a href="#introduction">Home</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#procedure-list">Procedimentos</a>
+              <a href="#procedure-list">Nossos Procedimentos</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#dental-procedures">Serviços</a>
+              <a href="#dental-procedures">Procedimentos Odontológicos</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#team-section">Equipe</a>
+              <a href="#team-section">Nossa Equipe</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#agendar-consulta">Agendar</a>
+              <a href="#agendar-consulta">Agende Sua Consulta</a>
             </li>
           </ul>
         </div>
 
         <div className={styles.section}>
-          <h3>CONTACT US</h3>
+          <h3>CONTATO</h3>
           <p><FontAwesomeIcon icon={faMapMarkerAlt} className={styles.contactIcon} /> R. Piedade, 441 - Jardim Santa Brigida</p>
           <p><FontAwesomeIcon icon={faEnvelope} className={styles.contactIcon} /> <a href="mailto:oisorria@gmail.com">oisorria@gmail.com</a></p>
           <div className={styles.subscribe}>
@@ -62,7 +62,7 @@ const Footer = () => {
 
       <div className={styles.bottomBar}>
         <img src={logo} alt="Logo" />
-        <p>ALLRIGHT RESERVED - OI, SORRIA ODONTOLOGIA INTEGRADA</p>
+        <p>ALL RIGHTS RESERVED - OI, SORRIA ODONTOLOGIA INTEGRADA</p>
         <div className={styles.legalLinks}>
           <a href="#">DISCLAIMER</a>
           <a href="#">PRIVACY POLICY</a>

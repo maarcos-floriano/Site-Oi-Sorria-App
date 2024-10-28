@@ -4,10 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-const AgendarConsulta = () => {
+const AgendarConsulta = ({ id }) => {
   return (
-    <section className={styles.container}>
-      <h2 className={styles.title}>AGENDE SUA CONSULTA</h2>
+    <section className={styles.container} id={id}>
+      <h2 className={styles.title}>Agende Sua Consulta</h2>
 
       <div className={styles.formContainer}>
         <form className={styles.form}>
@@ -27,7 +27,7 @@ const AgendarConsulta = () => {
             <h4 className={styles.subTitle}>Mensagem</h4>
             <textarea placeholder="Mensagem" className={styles.textarea}></textarea>
           </label>
-          <button type="submit" className={styles.submitButton}>enviar</button>
+          <button type="submit" className={styles.submitButton}>Enviar</button>
         </form>
 
         <div className={styles.contactSection}>
@@ -54,11 +54,13 @@ const AgendarConsulta = () => {
             </div>
           </div>
 
-          <div className={styles.contactItem}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
-            <div>
-              <h4>ENDEREÇO</h4>
-              <p>R. Piedade, 441 - Jardim Santa Brigida</p>
+          <div className={styles.contactRow}>
+            <div className={styles.contactItem}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} className={styles.icon} />
+              <div>
+                <h4>ENDEREÇO</h4>
+                <p>R. Piedade, 441 - Jardim Santa Brigida</p>
+              </div>
             </div>
           </div>
 

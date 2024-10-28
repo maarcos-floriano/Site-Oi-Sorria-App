@@ -9,7 +9,7 @@ import Footer from '../Sections/Footer/Footer';
 
 const Home = () => {
   return (
-    <div className={style['home']}>
+    <div className={style['home']}  id={'home'}>
       <Navbar/>
       <section id="introduction">
         <Introduction/>
