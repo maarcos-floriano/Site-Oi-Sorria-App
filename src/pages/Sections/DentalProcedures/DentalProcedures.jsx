@@ -21,7 +21,7 @@ const DentalProcedures = ({ id, pagina }) => {
           restaurações, implantes e mais.  <br/> <br/>Confie em nossa equipe para garantir a melhor saúde e estética para
           seu sorriso.
         </p>
-        <a href="#team-section">
+        <a className={style['a']} href="#team-section">
         <button className={style['learn-more-button']}  onClick={takeDashboard}>Saiba Mais</button>
         </a>
       </div>

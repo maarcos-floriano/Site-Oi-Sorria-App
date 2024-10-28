@@ -11,7 +11,7 @@ const Introduction = ({ id }) => {
         <p className={styles.description}>
           Uma clínica dedicada para aumentar sua autoestima e melhorar sua saúde :)
         </p>
-        <a href="#procedure-list">
+        <a href="#procedure-list" className={styles['a']}>
         <button className={styles.button}> Saiba Mais</button>
         </a>
       </div>
