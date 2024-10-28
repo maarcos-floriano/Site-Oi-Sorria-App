@@ -1,7 +1,14 @@
 import style from './DentalProcedures.module.css';
 import afro from '../../../utils/assets/afro.png';
+import { useNavigate } from 'react-router-dom';
 
-const DentalProcedures = ({ id }) => {
+const DentalProcedures = ({ id, pagina }) => {
+  const navigate = useNavigate();
+
+  const takeDashboard = () => {
+    navigate('#team-section'); 
+  };
+
   return (
     <section className={style['dental-procedures']} id={id}>
       <div className={style['image-container']}>
@@ -14,7 +21,9 @@ const DentalProcedures = ({ id }) => {
           restaurações, implantes e mais.  <br/> <br/>Confie em nossa equipe para garantir a melhor saúde e estética para
           seu sorriso.
         </p>
-        <button className={style['learn-more-button']} style={{ border: '1px solid #0455BF' }}>Saiba Mais</button>
+        <a href="#team-section">
+        <button className={style['learn-more-button']}  onClick={takeDashboard}>Saiba Mais</button>
+        </a>
       </div>
     </section>
   );

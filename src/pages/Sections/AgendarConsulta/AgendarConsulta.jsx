@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './AgendarConsulta.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
@@ -10,22 +10,22 @@ const AgendarConsulta = ({ id }) => {
       <h2 className={styles.title}>Agende Sua Consulta</h2>
 
       <div className={styles.formContainer}>
-        <form className={styles.form}>
+        <form className={styles.form} onSubmit={saveFields}>
           <label>
             <h4 className={styles.subTitle}>Nome</h4>
-            <input type="text" placeholder="Nome" className={styles.input} />
+            <input type="text" placeholder="Nome" id='name' className={styles.input} />
           </label>
           <label>
             <h4 className={styles.subTitle}>E-mail</h4>
-            <input type="email" placeholder="E-mail" className={styles.input} />
+            <input type="email" placeholder="E-mail" id='email' className={styles.input} />
           </label>
           <label>
             <h4 className={styles.subTitle}>CPF</h4>
-            <input type="text" placeholder="CPF" className={styles.input} />
+            <input type="text" placeholder="CPF" id='cpf' className={styles.input} />
           </label>
           <label>
             <h4 className={styles.subTitle}>Mensagem</h4>
-            <textarea placeholder="Mensagem" className={styles.textarea}></textarea>
+            <textarea placeholder="Mensagem" id='mensagem' className={styles.textarea}></textarea>
           </label>
           <button type="submit" className={styles.submitButton}>Enviar</button>
         </form>
@@ -76,6 +76,20 @@ const AgendarConsulta = ({ id }) => {
       </div>
     </section>
   );
+
+  function saveFields(value){
+    value.preventDefault();
+    const formElements = value.target.elements;
+    const nameForm = formElements.name.value;
+    const emailForm = formElements.email.value;
+    const cpfForm = formElements.cpf.value;
+    const mensagemForm = formElements.mensagem.value;
+
+    const texto = `Olá, meu nome é ${nameForm}.\nEmail: ${emailForm}\nMensagem: ${mensagemForm}`;
+    const numeroWhatsApp = "+5511955829675";
+    const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
+    window.open(url, "_blank");
+  }
 };
 
 export default AgendarConsulta;

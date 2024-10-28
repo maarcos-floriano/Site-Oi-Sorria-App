@@ -11,7 +11,9 @@ const Introduction = ({ id }) => {
         <p className={styles.description}>
           Uma clínica dedicada para aumentar sua autoestima e melhorar sua saúde :)
         </p>
-        <button className={styles.button} style={{ border: '1px solid #fff' }}>Saiba Mais</button>
+        <a href="#procedure-list">
+        <button className={styles.button}> Saiba Mais</button>
+        </a>
       </div>
     </section>
   );
