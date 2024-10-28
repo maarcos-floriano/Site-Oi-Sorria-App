@@ -28,23 +28,23 @@ const Footer = () => {
           <ul className={styles.navList}>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#">Home</a>
+              <a href="#introduction">Home</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#">Nossos Procedimentos</a>
+              <a href="#procedure-list">Nossos Procedimentos</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#">Procedimentos Odontológicos</a>
+              <a href="#dental-procedures">Procedimentos Odontológicos</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#">Nossa Equipe</a>
+              <a href="#team-section">Nossa Equipe</a>
             </li>
             <li>
               <FontAwesomeIcon icon={faAngleRight} className={styles.icon} />
-              <a href="#">Agende Sua Consulta</a>
+              <a href="#agendar-consulta">Agende Sua Consulta</a>
             </li>
           </ul>
         </div>
