@@ -2,16 +2,16 @@ import React from 'react';
 import styles from "./Introduction.module.css";
 import logo from "../../../utils/assets/logo.png";
 
-const Introduction = () => {
+const Introduction = ({ id }) => {
   return (
-    <section className={styles.heroContainer}>
+    <section className={styles.heroContainer} id={id}>
       <img src={logo} alt="Logo" className={styles.logo} />
       <div className={styles.content}>
         <h1 className={styles.title}>Oi, Sorria</h1>
         <p className={styles.description}>
           Uma clínica dedicada para aumentar sua autoestima e melhorar sua saúde :)
         </p>
-        <button className={styles.button}>Saiba Mais</button>
+        <button className={styles.button} style={{ border: '1px solid #fff' }}>Saiba Mais</button>
       </div>
     </section>
   );

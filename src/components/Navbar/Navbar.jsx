@@ -13,14 +13,15 @@ const Navbar = () => {
     <nav className={style.navbar}>
       <div className={style.navbarLogo}>
         <img src={logo} alt="logo" />
-        <h1>OI, SORRIA</h1>
+        <h1>Oi, Sorria!</h1>
       </div>
       
       <ul className={`${style.navbarLinks} ${isMobileMenuOpen ? style.active : ''}`}>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Our Services</a></li>
-        <li><a href="#">Our Projects</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#">Nossos Procedimentos</a></li>
+        <li><a href="#">Procedimentos Odontológicos</a></li>
+        <li><a href="#">Nossa Equipe</a></li>
+        <li><a href="#">Agende Sua Consulta</a></li>
       </ul>
 
       <button className={style.navbarButton}>
